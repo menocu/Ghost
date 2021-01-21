@@ -1,5 +1,6 @@
 // # Ghost Startup
 // Orchestrates the startup of Ghost when run from command line.
+// asdfasdfkjahdsbfgjkhsbdnfb
 
 const startTime = Date.now();
 const debug = require('ghost-ignition').debug('boot:index');
