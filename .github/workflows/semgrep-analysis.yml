@@ -1,8 +1,6 @@
 name: Semgrep
 on: [pull_request]
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  
+
 jobs:
   semgrep:
     runs-on: ubuntu-latest
@@ -10,6 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Semgrep
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         id: semgrep
         uses: returntocorp/semgrep-action@v1
         with:
