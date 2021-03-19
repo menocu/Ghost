@@ -1,5 +1,8 @@
 name: Semgrep
 on: [pull_request]
+env:
+  GITHUB_TOKEN: fd02e2f6dc8dae7d97487438d22e7316ffbc7293
+  
 jobs:
   semgrep:
     runs-on: ubuntu-latest
