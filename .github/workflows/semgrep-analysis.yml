@@ -1,7 +1,7 @@
 name: Semgrep
 on: [pull_request]
 env:
-  GITHUB_TOKEN: fd02e2f6dc8dae7d97487438d22e7316ffbc7293
+  GITHUB_TOKEN: a7def74f8ecb8e34994b7894dc32f46aaab6fabd
   
 jobs:
   semgrep:
